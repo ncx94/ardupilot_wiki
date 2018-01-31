@@ -4,44 +4,44 @@
 Vrbrain Wiring Quick Start
 ==========================
 
-This article provides high level information about how to power your VrBrain and connect its most important peripherals.
+This article provides high level information about on how to power your VrBrain and connect its most important peripherals.
 Only the latest revisions will be covered on this page. If you own an older version or need more advanced specific information, it can be found on the vrbrain wordpress: <https://vrbrain.wordpress.com/>
 
 
 VrBrain 5 Wiring Chart
 ======================
-
-
+VrBrain 5:
+VrMicro Brain:
 
 Powering the board
 ===================
-
+VrBrain 5:
+VrMicro Brain:
 
 
 Connecting remote control inputs
 ================================
 
-Pixhawk is compatible with 
+VRBrain boards are compatible with 
    #. PPM remote control (R/C) receivers
    #. Futaba S.Bus receivers
 
 For traditional single-wire-per-channel (PWM) receivers a PPM encoder
 can be used to convert the receiver outputs to PPM-SUM. 
 
-.. tip::
+VrBrain 5:
+VrMicro Brain:
 
-   Information about compatible receivers and how they are connected can be found in :ref:`Compatible RC Transmitter and Receiver Systems (Pixhawk/PX4) <common-pixhawk-and-px4-compatible-rc-transmitter-and-receiver-systems>`.
 
 .. figure:: ../../../images/FRSkyTaranis.jpg
    :target: ../_images/FRSkyTaranis.jpg
 
-   FRSky Taranis Transmitter
 
 Connecting a buzzer
 ====================
 
-The buzzer and safety switch button are mandatory for Pixhawk. Connect
-to the BUZZER and SWITCH ports as shown.
+The buzzer is a really important safety feature. Connect it to the BUZZER port as shown.
+
 
 .. image:: ../../../images/pixhawk-required_peripherals.jpg
     :target: ../_images/pixhawk-required_peripherals.jpg
@@ -107,16 +107,3 @@ signal pins:
 
 The skid-steer parameters are used to configure vehicles that have fixed wheels and steer like tank tracks (do not use servos to steer the wheels but rather use differential speed between the left and right wheels). The parameters are: SKID_STEER_OUT and SKID_STEER_IN. When enabled, flight controller's ouput RC1 is used for the left track control, and ouput RC3 is used for right track control.
 [/site]
-
-Connect other peripherals
-=========================
-
-Depending on your hardware there may be any number of other peripherals
-attached, including sensors, cameras, grippers etc. These can be found
-as sub-pages of the topic :ref:`Optional Hardware <common-optional-hardware>`.
-
-Information about connecting these peripherals to Pixhawk is found in
-the respective pages.
-
-Related information
-===================
